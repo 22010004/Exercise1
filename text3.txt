@@ -1,0 +1,30 @@
+#include <iostream>
+
+
+using namespace std;
+
+int main() {
+
+    double cost_merchandise; salary_employees; rent_yearly; cost_electricity; profit = 0.1; sale = 0.15;total_expenses = 0;markup_price, mark_percentage = 0;
+
+    cout << "Enter the total cost of merchandise: ";
+    cin >> cost_merchandise;
+
+    cout << "Enter the salary of employees (including your own): ";
+    cin >> salary_employees;
+
+    cout << "Enter yearly rent: ";
+    cin >> rent_yearly;
+
+    cout << "Enter the estimated electricity cost: ";
+    cin >> cost_electricity;
+
+    total_expenses = cost_merchandise + salary_employees + rent_yearly + cost_electricity;
+    markup_price = (0.10 * cost_merchandise + total_expenses) / 0.85;
+    mark_percentage = (markup_price * 100) / cost_merchandise;
+
+    cout<< setprecision(2) << fixed;
+    cout << "Markup_percentage: " <<mark_percentage << "%";
+
+    return 0;
+}
